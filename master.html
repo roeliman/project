@@ -1,19 +1,87 @@
-<html>
-  <head>
-    <title>master</title>
-  </head>
-  <body>
-    <h1>MASTER</h1>
-    <div class="mantap">
-      okesiep
-      <h2>makan makan</h2>
-      sadasd
-        asdasdas
-          asdadasd
+li data-turbolinks="false"
+  a href="#" data-turbolinks="false" = t('moments_navigation.nav_item_name', default: 'Photos & Gifts')
 
-      asdasdasd
-      asdasdas  
-        adadasd
-    </div>
-  </body>
-</html>
+  .sub-menu.sub-style-2
+    = image_tag 'web/moments/collections.png.webp', alt: 'Cetak Photo Prints Online', class: 'moments-collection', data: { webp: true, fallback: asset_path('web/moments/collections.png') }
+
+    .row.row-20.sub-menu-inner.moments-menu
+      .col-md-5
+        .category-by-menu
+          span
+            a[href="https://www.printerous.com/en/moments/" target="_target"]
+              = image_tag 'web/moments_by_prts.png.webp', width: 341, alt: "Moments by Printerous Logo", data: { webp: true, fallback: asset_path('web/moments_by_prts.png') }
+          p
+            = t('moments_navigation.left_desc')
+
+      .col-md-7
+        h2 makan
+        h3 minum
+          span buang air
+        .category-by-menu
+          .row.row-18
+            .col-md-3
+              a.cat-photo-gifts[href="https://www.printerous.com/en/moments/photo-book" target="_blank"]
+                figure
+                  = image_tag 'web/moments/Photobooks_140x93.jpg.webp', width: 140, alt: 'Photo Books Printerous',
+                    data: { webp: true, fallback: asset_path('web/moments/Photobooks_140x93.jpg') }
+                h4 = t('moments_navigation.photobooks', default: 'Photobooks')
+
+            .col-md-3
+              a.cat-photo-gifts[href="https://www.printerous.com/en/moments/photo-print" target="_blank"]
+                figure
+                  = image_tag 'web/moments/Photo_Print_140x93.jpg.webp', width: 140, alt: 'Photo Prints Printerous',
+                    data: { webp: true, fallback: asset_path('web/moments/Photo_Print_140x93.jpg') }
+                h4 = t('moments_navigation.photo_prints', default: 'Photo Prints')
+
+            .col-md-3
+              a.cat-photo-gifts[href="https://www.printerous.com/en/moments/canvas" target="_blank"]
+                figure
+                  = image_tag 'web/moments/Canvas_Art_140x93.jpg.webp', width: 140, alt: 'Canvas Arts Printerous',
+                    data: { webp: true, fallback: asset_path('web/moments/Canvas_Art_140x93.jpg') }
+                h4 = t('moments_navigation.canvas_arts', default: 'Canvas Arts')
+
+            .col-md-3
+              a.cat-photo-gifts[href="https://www.printerous.com/en/moments/frame-art" target="_blank"]
+                figure
+                  = image_tag 'web/moments/Frame_Art_140x93.jpg.webp', width: 140, alt: 'Frame Arts Printerous',
+                    data: { webp: true, fallback: asset_path('web/moments/Frame_Art_140x93.jpg') }
+                h4 = t('moments_navigation.frame_arts', default: 'Frame Arts')
+
+            .col-md-3
+              a.cat-photo-gifts[href="https://www.printerous.com/en/moments/magnet" target="_blank"]
+                figure
+                  = image_tag 'web/moments/Magnet_140x93.jpg.webp', width: 140, alt: 'Magnet Printerous',
+                    data: { webp: true, fallback: asset_path('web/moments/Magnet_140x93.jpg') }
+                h4 = t('moments_navigation.magnets', default: 'Magnets')
+
+            .col-md-3
+              a.cat-photo-gifts[href="https://www.printerous.com/en/moments/phone-case" target="_blank"]
+                figure
+                  = image_tag 'web/moments/Gadget_Case_140x93.jpg.webp', width: 140, alt: 'Phone Cases Printerous',
+                    data: { webp: true, fallback: asset_path('web/moments/Gadget_Case_140x93.jpg') }
+                h4 = t('moments_navigation.gadet_cases', default: 'Gadget Cases')
+
+            .col-md-3
+              a.cat-photo-gifts[href="https://www.printerous.com/en/moments/pillow" target="_blank"]
+                figure
+                  = image_tag 'web/moments/Throw_Pillow_140x93.jpg.webp', width: 140, alt: 'Throw Pillows Printerous',
+                    data: { webp: true, fallback: asset_path('web/moments/Throw_Pillow_140x93.jpg') }
+                h4 = t('moments_navigation.throw_pillows', default: 'Throw Pillows')
+
+            .col-md-3
+              a.cat-photo-gifts[href="https://www.printerous.com/en/moments/tote-bag" target="_blank"]
+                figure
+                  = image_tag 'web/moments/Tote_Bag_140x93.jpg.webp', width: 140, alt: 'Tote Bag Printerous',
+                    data: { webp: true, fallback: asset_path('web/moments/Tote_Bag_140x93.jpg') }
+                h4 = t('moments_navigation.tote_bags', default: 'Tote Bags')
+
+        .available-at-store.d-flex.justify-content-between.align-items-center
+          a href="https://moments.printerous.com/" class="btn btn-orange ml-0" target="_blank"
+            = t('moments_navigation.cta_text')
+
+          span.pl-4.pr-4 = t('moments_navigation.or_text')
+          .d-flex
+            a[href="https://apps.apple.com/id/app/printerous-moments/id1116878557" target="_blank" class="ml-0"]
+              = image_tag 'web/appstore.png', class: 'btn-app'
+            a[href="https://play.google.com/store/apps/details?id=com.printerous.moment&hl=en" target="_blank"]
+              = image_tag 'web/googleplay.png', class: 'btn-app', alt: 'Google Play Logo'
